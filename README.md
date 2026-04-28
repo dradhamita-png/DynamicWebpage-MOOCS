@@ -1,4 +1,4 @@
-#  Web Projects Collection
+# Dynamic Web Projects (HTML, CSS & Javascript)
 
 ### Hotel Management System +  Student Admission Portal
 
