@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hotel Management Pro</title>
+<link rel="stylesheet" href="../CSS/website2.css">
+</head>
+
+<body>
+
+<header>🏨 Hotel Management Pro</header>
+
+<div class="dashboard">
+  <div class="card">Total Rooms: <span id="totalRooms"></span></div>
+  <div class="card">Available: <span id="availableRooms"></span></div>
+  <div class="card">Booked: <span id="bookedRooms"></span></div>
+  <div class="card">Revenue: ₹<span id="revenue"></span></div>
+</div>
+
+<div class="form-section">
+  <input type="text" id="guestName" placeholder="Guest Name">
+  <input type="number" id="roomNumber" placeholder="Room Number">
+  <input type="date" id="checkIn">
+  <input type="date" id="checkOut">
+  <button onclick="bookRoom()">Book Room</button>
+</div>
+
+<div class="container" id="rooms"></div>
+
+<h2 style="text-align:center;">📋 Booking Records</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Guest</th>
+      <th>Room</th>
+      <th>Days</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody id="records"></tbody>
+</table>
+
+<div class="footer">
+  <p>&copy; Radhamita</p>
+</div>
+
+<script src="website2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px cyan;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px cyan;
+}
+
+/* Form */
+.form-section {
+  text-align: center;
+  padding: 20px;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: cyan;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: magenta;
+  color: white;
+}
+
+/* Room Grid */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.room {
+  width: 260px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.6);
+  box-shadow: 0 0 15px rgba(0,255,255,0.4);
+  transition: 0.3s;
+}
+
+.room:hover {
+  transform: scale(1.05);
+}
+
+.available { color: lightgreen; }
+.booked { color: red; }
+
+/* Table */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  color: cyan;
+  text-shadow: 0 0 8px cyan;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Admission Portal</title>
+
+<link rel="stylesheet" href="../CSS/website3.css">
+</head>
+
+<body>
+
+<header>🎓 Student Admission Portal</header>
+
+<div class="top-bar">
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+</div>
+
+<div class="form-container">
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="number" id="age" placeholder="Age">
+    <input type="email" id="email" placeholder="Email">
+
+    <select id="course">
+        <option value="">Select Course</option>
+        <option>Science</option>
+        <option>Commerce</option>
+        <option>Arts</option>
+        <option>Engineering</option>
+    </select>
+
+    <button onclick="addStudent()">Add Student</button>
+</div>
+
+<div class="search">
+    <input type="text" id="search" placeholder="Search student..." onkeyup="renderTable()">
+    
+    <select id="filterCourse" onchange="renderTable()">
+        <option value="">All Courses</option>
+        <option>Science</option>
+        <option>Commerce</option>
+        <option>Arts</option>
+        <option>Engineering</option>
+    </select>
+</div>
+
+<div class="counter">
+    Total Students: <span id="count">0</span>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+<div class="footer">
+    <p>&copy; Radhamita</p>
+</div>
+
+<script src="website3.js"></script>
+
+</body>
+</html>
